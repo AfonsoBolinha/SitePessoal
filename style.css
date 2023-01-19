@@ -1,5 +1,6 @@
 /* Aplicando o tema escuro */
 body {
+    overflow-x: hidden;
     background: hsla(208, 53%, 19%, 1);
 
     background: linear-gradient(90deg, hsla(208, 53%, 19%, 1) 30%, hsla(185, 71%, 37%, 1) 100%);
