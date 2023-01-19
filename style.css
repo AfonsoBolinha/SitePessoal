@@ -1,0 +1,169 @@
+/* Aplicando o tema escuro */
+body {
+    background: hsla(208, 53%, 19%, 1);
+
+    background: linear-gradient(90deg, hsla(208, 53%, 19%, 1) 30%, hsla(185, 71%, 37%, 1) 100%);
+
+    background: -moz-linear-gradient(90deg, hsla(208, 53%, 19%, 1) 30%, hsla(185, 71%, 37%, 1) 100%);
+
+    background: -webkit-linear-gradient(90deg, hsla(208, 53%, 19%, 1) 30%, hsla(185, 71%, 37%, 1) 100%);
+
+
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 255, 255);
+}
+header img {
+    width: 100px; /* set width to 100px */
+    }
+.button {
+    background-color: #243d54; /* or any color you want */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+nav ul {
+    display: flex;
+    margin-left: auto;
+    margin-right: 3vh;
+    align-items: center;
+    justify-content: flex-end;
+    list-style-type: none; /* align items to right */
+}
+nav ul li {
+    margin-left: 10px; /* add margin between buttons */
+}
+
+.button:hover {
+    background-color: #134a75; /* or any color you want */
+    cursor: pointer;
+}
+
+/* Estilizando o cabeçalho */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(7, 24, 35);
+    padding: 10px;
+    display: flex;
+
+    height: 5vh;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Estilizando a seção de biografia */
+.biography {
+    background-image: url("Images/bio.jpg");
+    height: 93vh;
+    align-self: center;
+    display: flex;
+    background-position: center;
+    background-size: cover;
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+.biography p {
+    margin-top: 27vh;
+    font-size: x-large;
+    font-family: 'Inconsolata', monospace;
+    font-weight: normal;
+    margin-bottom: 10vh;
+    color: #badbff;
+    line-break: initial;
+    text-align: left;
+    width: 40vh;
+}
+/*'Inconsolata', monospace
+*/
+::-webkit-scrollbar {
+    width: 0.2em;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0);
+}
+.biography p2 {
+    margin-left:120vh;
+    margin-top: 27vh;
+    font-size: x-large;
+    font-family: 'Inconsolata', monospace;
+    font-weight: normal;
+    margin-bottom: 10vh;
+    color: #badbff;
+    line-break: initial;
+    text-align: right;
+    width: 50vh;
+}
+
+/* Estilizando os títulos das seções */
+.section-title {
+    background-color: #071823;
+    margin: 0px 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilizando os projetos */
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+}
+.project {
+    background-color: #195a6d;
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+}
+.project img {
+    width: 100%;
+}
+.project h2 {
+    margin: 20px;
+    text-align: center;
+}
+.project p {
+    display: none;
+    margin: 10px 0;
+}
+.project div a{
+    position: absolute;
+    bottom: 10px;
+}
+.project a {
+    background-color: #071823;
+    color: #fff;
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 2px;
+}
+
+/* Estilizando a interação de ampliar a imagem ao passar o cursor */
+.project img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: transform .3s;
+}
+.transition-image {
+    transition: all 0.5s ease;
+}

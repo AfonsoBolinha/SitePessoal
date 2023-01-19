@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href='https://fonts.googleapis.com/css2?family=Inconsolata&display=swap' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <title>Minha Página Pessoal</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="code.js"></script>
+</head>
+<body>
+<header>
+    <img src="Images/AfonsoLogo.png" alt="Logo">
+    <nav>
+        <ul style="display: flex;">
+            <li><a href="#biography" class="button">Biografia</a></li>
+            <li><a href="https://github.com/AfonsoBolinha" class="button" >GitHub</a></li>
+            <li><a href="#projetos" class="button">Projetos</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="biography" id="biography">
+    <p>Sou o Afonso Martins, estudante de Engenharia Informática na Unversidade da Beira Interior e seja bem vindo ao meu portofolio de projetos</p>
+    <p2>Já tenho alguns projetos feitos, seja em contexto universitário, quer seja em projetos pessoais, alguns aqui presentes ou no github.<p2>As As principais liguagens de programação que uso são Java, C e Python. E grande conhecimento em SQL e capacidades de utilização e desenvolvimento em Base de Dados </p2></p2>
+</div>
+<h2 class="section-title" id="projetos">Projetos Terminados</h2>
+<div class="project-container" >
+    <div class="project">
+        <img src="Images/Caixa/Main.png" id="caixa" class="transition-image" id="caixa" alt="Projeto Universitário 1" onmouseover="showProjectInfo('university1',1)" onmouseout="hideProjectInfo(1)">
+        <h2>Aplicação de Caixa Registradora</h2>
+        <p id="university1" class="project-info">Aplicação com o intuito de servir de caixa registradora de uma cadeia de bares. Consegue adicionar, remover e ver o que um bar consumiu e pedir ao armazem. É repartida em loja e dono de varios bares.</p>
+    </div>
+
+    <div class="project" >
+        <img src="Images/Gestor/welcome%20(1).png" id="gestor" class="transition-image"  alt="Projeto Universitário 3" onmouseover="showProjectInfo('university3',3)" onmouseout="hideProjectInfo(3)">
+        <h2>Gestor de Projetos</h2>
+        <p id="university3" class="project-info">Este projeto consegue gerir projetos, podendo editar, adicionar ou ver estatisticas de cada um dos mesmos. Podem ser adicionados projetos, investigadores, patrocinios entre outras partes.</p>
+        <a href="https://github.com/AfonsoBolinha/Gestor-Projetos">Ver mais</a>
+    </div>
+    <div class="project" >
+        <img src="Images/BatalhaNaval/jogo.png" alt="Projeto Universitário 2" onmouseover="showProjectInfo('university2',2)" onmouseout="hideProjectInfo(2)">
+        <h2>Batalha Naval Online</h2>
+        <p id="university2" class="project-info">Jogo online criado com base em sockets, que permite rodar peças e jogar online, desde que na mesma rede.</p>
+        <a href="https://github.com/AfonsoBolinha/BatalhaNaval">Ver mais</a>
+    </div>
+</div>
+<!--<h2 class="section-title" >Projetos Pessoais</h2>
+<div class="project-container">
+    <div class="project">
+        <img src="https://via.placeholder.com/300x200" alt="Projeto Pessoal 1" onmouseover="showProjectInfo('personal1',4)" onmouseout="hideProjectInfo()">
+        <h2>Projeto Pessoal 1</h2>
+        <p id="personal1" class="project-info">Descrição do projeto pessoal 1</p>
+        <a href="#">Ver mais</a>
+    </div>
+    <div class="project">
+        <img src="https://via.placeholder.com/300x200" alt="Projeto Pessoal 2" onmouseover="showProjectInfo('personal2',5)" onmouseout="hideProjectInfo()">
+        <h2>Projeto Pessoal 2</h2>
+        <p id="personal2" class="project-info">Descrição do projeto pessoal 2</p>
+        <a href="#">Ver mais</a>
+    </div>
+    <div class="project">
+        <img src="https://via.placeholder.com/300x200" alt="Projeto Pessoal 3" onmouseover="showProjectInfo('personal3',6)" onmouseout="hideProjectInfo()">
+        <h2>Projeto Pessoal 3</h2>
+        <p id="personal3" class="project-info">Descrição do projeto pessoal 3</p>
+        <a href="#">Ver mais</a>
+    </div>
+</div>-->
+<h2 class="section-title">
+    Projetos em Desenvolvimento</h2>
+<div class="project-container">
+    <div class="project">
+        <img src="Images/ApisGest.png" alt="Projeto em Desenvolvimento 1" onmouseover="showProjectInfo('development1',6)" onmouseout="hideProjectInfo()">
+        <h2>ApisStats</h2>
+        <p id="development1" class="project-info">Irá permitir receber por sms ou ver numa aplicação a situação de cada colmeia de um apiário </p>
+        <!--<a href="#">Ver mais</a>-->
+    </div>
+    <div class="project">
+        <img src="Images/Report.png" alt="Projeto em Desenvolvimento 2" onmouseover="showProjectInfo('development2',7)" onmouseout="hideProjectInfo()">
+        <h2>Ainda sem Nome</h2>
+        <p id="development2" class="project-info">Aplicação que permite apicultores criarem grupos e verem os apiarios uns dos outros e registar a situação de cada. Permite ver no mapa e marcar no mesmo</p>
+        <!--<a href="#">Ver mais</a>-->
+    </div>
+</div>
+
