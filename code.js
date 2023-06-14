@@ -1,8 +1,9 @@
 var gestorImg= ["Images/Gestor/welcome (1).png","Images/Gestor/Patrocinios.png","Images/Gestor/edit2.png","Images/Gestor/image_2022-12-24_190030831.png"];
 var caixaImg= ["Images/Caixa/Main.png","Images/Caixa/2.png","Images/Caixa/3.png","Images/Caixa/4.png"];
 var projectGoose=["Images/ProjectGoose/MainMenu.png","Images/ProjectGoose/Tuturial.png","Images/ProjectGoose/LVL2.png"]
-var timeout=2000;
-var play1=true,play2=true,play3=true,play4=true;
+var apisGest=["Images/ApisGest/Report.png", "Images/ApisGest/Lobby.png","Images/ApisGest/Registo.png","Images/ApisGest/Registo2.png","Images/ApisGest/Mapa.png","Images/ApisGest/Relatorio.png"]
+var timeout=1500;
+var play1=true,play2=true,play3=true,play4=true,play5=true;
 async function showProjectInfo(projectId, img) {
     let projectInfo = document.getElementById(projectId);
     projectInfo.style.display = "block";
@@ -42,6 +43,18 @@ async function showProjectInfo(projectId, img) {
             }
         }
     }
+    if (img == 5) {
+        play5=true;
+        let i = 0;
+        while(i < apisGest.length && play5) {
+            development2I.src = apisGest[i];
+            i++;
+            await new Promise(resolve => setTimeout(resolve, timeout));
+            if (i==5){
+                i=0;
+            }
+        }
+    }
 }
 
 
@@ -61,7 +74,11 @@ function hideProjectInfo(img) {
     }
     if (img==4){
         Goosegame.src=projectGoose[0];
-        play3=false;
+        play4=false;
+    }
+    if (img==5){
+        development2I.src=apisGest[0];
+        play5=false;
     }
 
 }
