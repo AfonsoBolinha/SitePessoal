@@ -2,8 +2,10 @@ var gestorImg= ["Images/Gestor/welcome (1).png","Images/Gestor/Patrocinios.png",
 var caixaImg= ["Images/Caixa/Main.png","Images/Caixa/2.png","Images/Caixa/3.png","Images/Caixa/4.png"];
 var projectGoose=["Images/ProjectGoose/MainMenu.png","Images/ProjectGoose/Tuturial.png","Images/ProjectGoose/LVL2.png"]
 var apisGest=["Images/ApisGest/Report.png", "Images/ApisGest/Lobby.png","Images/ApisGest/Registo.png","Images/ApisGest/Registo2.png","Images/ApisGest/Mapa.png","Images/ApisGest/Relatorio.png"]
+var pagafinos=["Images/PagaFinos/Loading....png","Images/PagaFinos/CreateGrupo.png","Images/PagaFinos/CriarEvento.png","Images/PagaFinos/CriarEvento-1.png","Images/PagaFinos/GRUPO AGENDA.png","Images/PagaFinos/Grupos.png","Images/PagaFinos/GRUPOS VIEW.png","Images/PagaFinos/LOG IN.png","Images/PagaFinos/Main Menu.png","Images/PagaFinos/MENU BASE.png","Images/PagaFinos/SIGN UP.png","Images/PagaFinos/SIGN UP 2.png","Images/PagaFinos/SIGN UP 3.png","Images/PagaFinos/SIGN UP 4.png"]
+
 var timeout=1500;
-var play1=true,play2=true,play3=true,play4=true,play5=true;
+var play1=true,play2=true,play3=true,play4=true,play5=true,play6=true;
 async function showProjectInfo(projectId, img) {
     let projectInfo = document.getElementById(projectId);
     projectInfo.style.display = "block";
@@ -55,6 +57,18 @@ async function showProjectInfo(projectId, img) {
             }
         }
     }
+    if (img == 6) {
+        play6=true;
+        let i = 0;
+        while(i < pagafinos.length && play6) {
+            finos.src = pagafinos[i];
+            i++;
+            await new Promise(resolve => setTimeout(resolve, timeout));
+            if (i==pagafinos.length){
+                i=0;
+            }
+        }
+    }
 }
 
 
@@ -79,6 +93,10 @@ function hideProjectInfo(img) {
     if (img==5){
         development2I.src=apisGest[0];
         play5=false;
+    }
+    if (img==6){
+        finos.src=pagafinos[0];
+        play6=false;
     }
 
 }

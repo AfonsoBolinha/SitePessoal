@@ -132,9 +132,16 @@ header h1 {
     margin: 10px;
     padding: 20px;
     width: 300px;
+    height: 400px;
 }
 .project img {
     width: 100%;
+    /*Fazer com que a imagem caiba dentro dos 200px de altura sem desformatar a imagem*/
+    height: 200px;
+    object-fit: contain;
+    object-position: center;
+
+
 }
 .project h2 {
     margin: 20px;
